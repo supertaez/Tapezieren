@@ -1,88 +1,59 @@
-# Tapezieren
+# Tapezieren V1.1 - README
 
-Tapezieren is a Python application that allows users to add customizable calendar overlays to images. The name "Tapezieren" comes from the German word for "wallpapering," reflecting its primary use in creating themed wallpapers with calendar information.
+Tapezieren V1.1 is a Python-based desktop application that allows you to add customizable calendars to your images. Using an intuitive GUI built with Tkinter, the app helps you design and overlay monthly calendars with various font styles, colors, and layout options. The images are processed in batches, making it easy to apply the same design across multiple files.
 
 ## Features
-
-- User-friendly graphical interface
-- Customizable calendar styles
-- Live preview of calendar overlay
-- Batch processing of images
-- Support for various image formats (PNG, JPG, JPEG)
-- Adjustable font, colors, transparency, and corner radius
-- Predefined styles for quick customization
-
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- Python 3.7 or higher
-- pip (Python package installer)
+- **Custom Font Support**: Select from available system fonts and apply styles like bold, italic, and hollow.
+- **Color Customization**: Customize the font color, box background, weekday color, holiday color, and day name color.
+- **Layout Control**: Adjust transparency, curvature of the calendar box, table size, and offsets for precise placement on your image.
+- **Preview Functionality**: Instantly preview how the calendar will look on the image before processing.
+- **Batch Processing**: Apply the calendar design to multiple images at once by selecting an input folder.
+- **Supports Common Image Formats**: Works with PNG, JPG, and JPEG images.
 
 ## Installation
 
-Follow these steps to install Tapezieren:
-
-1. Clone this repository or download the source code:
+1. **Clone the repository**:
    ```
-   git clone https://github.com/supertaez/Tapezieren.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd Tapezieren
+   git clone https://github.com/supertaez/tapezieren.git
+   cd tapezieren
    ```
 
-3. Install the required dependencies:
+2. **Install dependencies**:
+   You will need Python 3 and the following libraries:
+   ```bash
+   pip install Pillow matplotlib
    ```
-   pip install pillow matplotlib
+
+3. **Run the application**:
+   ```bash
+   python tapezieren.py
    ```
 
 ## Usage
 
-To run Tapezieren:
+1. **Font Settings**: Choose the font from the dropdown and optionally apply bold, italic, or hollow styles.
+2. **Date Settings**: Select the month and year for the calendar you want to overlay.
+3. **Color Settings**: Customize the colors for different parts of the calendar.
+4. **Layout Settings**: Adjust sliders for transparency, box curvature, table size, and position offsets.
+5. **Select Folders**:
+   - Input Folder: Choose a folder containing images to which you want to add the calendar.
+   - Output Folder: Choose where the processed images should be saved.
+6. **Preview**: Preview the changes by cycling through the images with the **Next Preview Image** button.
+7. **Process**: Once satisfied, click the **Process All Images** button to apply the calendar to all images in the input folder.
 
-1. Open a terminal or command prompt.
-2. Navigate to the project directory.
-3. Run the following command:
-   ```
-   python Tapezieren.py
-   ```
-4. The graphical user interface (GUI) will appear.
+## GUI Screenshots
 
-To add calendar overlays to your images:
+![Screenshot 2024-10-19](https://github.com/user-attachments/assets/4405841c-27d7-4e8c-8244-1446e09b5580)
 
-1. Select a font from the dropdown menu.
-2. Choose a font size.
-3. Pick a predefined style or customize your own.
-4. Adjust the font color, box color, transparency, and corner radius as desired.
-5. Click "Select Input Folder" and choose the folder containing your images.
-6. Click "Select Output Folder" to specify where the processed images should be saved.
-7. Click "Update Preview" to see how your calendar overlay will look.
-8. Once satisfied with the preview, click "Process Images" to apply the overlay to all images in the input folder.
-
-## Customization Options
-
-- **Font**: Choose from available monospaced fonts on your system.
-- **Font Size**: Adjust the size of the calendar text.
-- **Style**: Select from predefined styles (Classic, Modern, Pastel) or create your own.
-- **Font Color**: Customize the color of the calendar text.
-- **Box Color**: Change the color of the background box behind the calendar.
-- **Box Transparency**: Adjust the opacity of the background box.
-- **Corner Radius**: Round the corners of the background box.
-
-## Contributing
-
-Contributions to Tapezieren are welcome! Here's how you can contribute:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-branch-name`.
-3. Make your changes and commit them: `git commit -m 'Add some feature'`.
-4. Push to the original branch: `git push origin feature-branch-name`.
-5. Create the pull request.
-
-Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+Feel free to customize and extend this README to suit your needs or repository style!
